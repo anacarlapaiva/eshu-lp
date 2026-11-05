@@ -69,3 +69,67 @@ export const Body = styled.p`
   color: ${({ theme }) => theme.colors.mutedForeground};
   line-height: 1.7;
 `;
+
+export const Board = styled.div`
+  display: grid;
+  gap: 3.5rem;
+  margin-top: 4.5rem;
+
+  ${media.up("desktop")} {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem 5rem;
+    align-items: start;
+  }
+`;
+
+export const PartHead = styled.div`
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+`;
+
+export const PartLabel = styled.span`
+  color: ${({ theme }) => theme.colors.accent};
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+`;
+
+export const PartName = styled.span`
+  font-family: ${({ theme }) => theme.fonts.display};
+  font-size: 1.35rem;
+`;
+
+export const Lesson = styled.article`
+  display: grid;
+  grid-template-columns: 2.25rem 1fr;
+  gap: 0.85rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+`;
+
+export const LessonIndex = styled.span`
+  font-family: ${({ theme }) => theme.fonts.display};
+  font-size: 1.05rem;
+  color: ${({ theme }) => theme.colors.accent};
+  padding-top: 0.15rem;
+`;
+
+export const LessonTitle = styled.h3`
+  margin: 0;
+  font-family: ${({ theme }) => theme.fonts.display};
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.2;
+`;
+
+export const LessonBody = styled.p`
+  margin: 0.4rem 0 0;
+  color: ${({ theme }) => theme.colors.mutedForeground};
+  font-size: 0.95rem;
+  line-height: 1.65;
+`;

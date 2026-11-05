@@ -1,9 +1,9 @@
 import { Container, GoldText, SectionEyebrow } from "@/components";
 import { revealOnScroll } from "@/animations";
-import { heroImages } from "@/constants/assets";
+import { portraits } from "@/constants/assets";
 import { BodyStack, Muted, SectionShell, SectionTitle } from "@/features/shared/sectionStyles";
 
-import { Border, Grid, Image, ImageFrame, Quote } from "./styles";
+import { Border, Caption, Grid, Image, ImageFrame, Quote, Secondary } from "./styles";
 
 export function PriestessSection() {
   return (
@@ -13,11 +13,18 @@ export function PriestessSection() {
           <ImageFrame {...revealOnScroll()}>
             <Border aria-hidden />
             <Image
-              src={heroImages.priestess}
-              alt="Priestess at an opening forest path"
+              src={portraits.ju}
+              alt="Iyá Ju Laroye smiling, hands together in greeting"
               loading="lazy"
-              width={1920}
-              height={1088}
+              width={1280}
+              height={720}
+            />
+            <Secondary
+              src={portraits.altar}
+              alt="Iyá Ju Laroye in front of a wall of sacred statues"
+              loading="lazy"
+              width={800}
+              height={1000}
             />
           </ImageFrame>
           <div>
@@ -27,8 +34,8 @@ export function PriestessSection() {
             </SectionTitle>
             <BodyStack>
               <Muted {...revealOnScroll(80)}>
-                Ju Laroye has been studying Afro-Brazilian spiritual traditions for more than 20
-                years.
+                Ju Laroye founded Escola do Pentagrama. She has been studying Afro-Brazilian
+                spiritual traditions for more than 20 years, and she is the voice in every lesson.
               </Muted>
               <Muted {...revealOnScroll(120)}>
                 She is an ordained Priestess of Sacred Umbanda, initiated in Ifá and the Magic of
@@ -47,6 +54,7 @@ export function PriestessSection() {
                 to understand the history, the philosophy, and the cultural context first, and then
                 decide for yourself what to do with it.
               </Muted>
+              <Caption>Priestess and founder of Escola do Pentagrama.</Caption>
             </BodyStack>
           </div>
         </Grid>
