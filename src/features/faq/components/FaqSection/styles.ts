@@ -34,11 +34,11 @@ export const Trigger = styled(Accordion.Trigger)`
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
-  padding: 1.5rem 0;
+  gap: 1rem;
+  padding: 1.15rem 0;
   text-align: left;
   font-family: ${({ theme }) => theme.fonts.display};
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 500;
 
   ${media.up("tablet")} {

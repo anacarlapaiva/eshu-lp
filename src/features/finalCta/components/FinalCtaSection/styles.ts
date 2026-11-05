@@ -1,11 +1,17 @@
 import { motion } from "motion/react";
 import styled from "styled-components";
 
+import { media } from "@/styles/media";
+
 export const Section = styled.section`
   position: relative;
   overflow: hidden;
-  padding: 8rem ${({ theme }) => theme.layout.gutter};
+  padding: 4rem ${({ theme }) => theme.layout.gutter};
   text-align: center;
+
+  ${media.up("tablet")} {
+    padding-block: 8rem;
+  }
 `;
 
 export const Glow = styled.div`
@@ -29,9 +35,14 @@ export const Content = styled(motion.div)`
 export const Title = styled.h2`
   margin: 0;
   font-family: ${({ theme }) => theme.fonts.display};
-  font-size: clamp(3rem, 6vw, 3.75rem);
+  font-size: clamp(2rem, 8.5vw, 2.5rem);
   font-weight: 500;
   line-height: 1.15;
+  text-wrap: balance;
+
+  ${media.up("tablet")} {
+    font-size: clamp(3rem, 6vw, 3.75rem);
+  }
 `;
 
 export const Lead = styled.p`

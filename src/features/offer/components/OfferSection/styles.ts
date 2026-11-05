@@ -7,7 +7,11 @@ export const Section = styled.section`
   position: relative;
   overflow: hidden;
   scroll-margin-top: 1.5rem;
-  padding: 7rem ${({ theme }) => theme.layout.gutter};
+  padding: 3.75rem ${({ theme }) => theme.layout.gutter};
+
+  ${media.up("tablet")} {
+    padding-block: 7rem;
+  }
 `;
 
 export const Bg = styled.img`
@@ -32,7 +36,7 @@ export const Card = styled(motion.div)`
   border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: ${({ theme }) => theme.radii.sm};
   background: ${({ theme }) => theme.colors.cardGlass};
-  padding: 2.5rem;
+  padding: 1.5rem 1.15rem;
   text-align: center;
   box-shadow: ${({ theme }) => theme.shadows.glow};
   backdrop-filter: blur(12px);
@@ -46,19 +50,30 @@ export const Badge = styled.span`
   display: inline-block;
   border-radius: ${({ theme }) => theme.radii.pill};
   background: ${({ theme }) => theme.colors.emberGradient};
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 0.85rem;
   color: ${({ theme }) => theme.colors.primaryForeground};
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
+
+  ${media.up("tablet")} {
+    padding: 0.25rem 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+  }
 `;
 
 export const Title = styled.h2`
   margin: 1.5rem 0 0;
   font-family: ${({ theme }) => theme.fonts.display};
-  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-size: clamp(1.85rem, 8vw, 2.25rem);
   font-weight: 500;
+  text-wrap: balance;
+
+  ${media.up("tablet")} {
+    font-size: clamp(2.25rem, 4vw, 3rem);
+  }
 `;
 
 export const Copy = styled.p`
@@ -69,10 +84,15 @@ export const Copy = styled.p`
 
 export const Prices = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: 0.35rem 1rem;
+  margin-top: 1.5rem;
+
+  ${media.up("tablet")} {
+    margin-top: 2rem;
+  }
 `;
 
 export const OldPrice = styled.s`
@@ -83,7 +103,7 @@ export const OldPrice = styled.s`
 
 export const NewPrice = styled.span`
   font-family: ${({ theme }) => theme.fonts.display};
-  font-size: 6rem;
+  font-size: clamp(4.25rem, 22vw, 6rem);
   font-weight: 600;
   line-height: 1;
   background: ${({ theme }) => theme.colors.goldGradient};

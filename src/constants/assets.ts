@@ -10,3 +10,9 @@ export const portraits = {
   ju: `${base}images/ju-portrait.jpg`,
   altar: `${base}images/ju-altar.jpg`,
 } as const;
+
+export const courseMockups = {
+  devices: `${base}images/course-devices.png?v=2`,
+  seal: `${base}images/guarantee-seal.png`,
+  footer: `${base}images/footer-mark.png`,
+} as const;

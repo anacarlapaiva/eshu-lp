@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 
+import { media } from "@/styles/media";
+
 export const Button = styled.a<{ $variant: "hero" | "block" | "cta" }>`
   display: inline-flex;
   align-items: center;
@@ -38,6 +40,17 @@ export const Button = styled.a<{ $variant: "hero" | "block" | "cta" }>`
       &:hover {
         transform: scale(1.03);
       }
+
+      ${media.down("tablet")} {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0.85rem 1.15rem;
+        font-size: 0.95rem;
+
+        &:hover {
+          transform: none;
+        }
+      }
     `}
 
   ${({ $variant }) =>
@@ -61,9 +74,15 @@ export const Button = styled.a<{ $variant: "hero" | "block" | "cta" }>`
   ${({ $variant }) =>
     $variant === "cta" &&
     css`
-      margin-top: 2.5rem;
-      padding: 1.25rem 2.5rem;
-      font-size: 1.125rem;
+      margin-top: 2rem;
+      padding: 1rem 1.75rem;
+      font-size: 1rem;
+
+      ${media.up("tablet")} {
+        margin-top: 2.5rem;
+        padding: 1.25rem 2.5rem;
+        font-size: 1.125rem;
+      }
 
       &:hover {
         transform: scale(1.05);

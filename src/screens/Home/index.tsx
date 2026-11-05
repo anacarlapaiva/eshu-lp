@@ -1,4 +1,4 @@
-import { SiteFooter } from "@/components/layout/SiteFooter";
+import { MobileOfferBar, SiteFooter } from "@/components/layout";
 import { mainContentId } from "@/constants/links";
 import { CurriculumSection } from "@/features/curriculum";
 import { FaqSection } from "@/features/faq";
@@ -34,6 +34,7 @@ export function HomeScreen() {
         <FinalCtaSection />
       </main>
       <SiteFooter />
+      <MobileOfferBar />
     </>
   );
 }

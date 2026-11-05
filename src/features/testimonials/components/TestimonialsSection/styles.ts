@@ -18,7 +18,11 @@ export const Card = styled(motion.figure)`
   border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: ${({ theme }) => theme.radii.sm};
   background: ${({ theme }) => theme.colors.card};
-  padding: 2rem;
+  padding: 1.35rem;
+
+  ${media.up("tablet")} {
+    padding: 2rem;
+  }
   transition:
     transform 0.5s ease,
     border-color 0.5s ease;

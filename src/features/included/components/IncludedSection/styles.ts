@@ -20,6 +20,7 @@ export const Card = styled(motion.article)`
   display: flex;
   flex-direction: column;
   flex: 1 1 16rem;
+  width: 100%;
   max-width: 22rem;
   border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: ${({ theme }) => theme.radii.sm};
@@ -88,7 +89,11 @@ export const BonusLabel = styled.span`
   color: ${({ theme }) => theme.colors.accent};
   font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.16em;
+
+  ${media.up("tablet")} {
+    letter-spacing: 0.3em;
+  }
   text-transform: uppercase;
 
   svg {

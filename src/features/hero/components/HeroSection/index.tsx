@@ -53,6 +53,7 @@ export function HeroSection() {
 
   return (
     <Section
+      data-hero
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onTouchStart={(event) => {

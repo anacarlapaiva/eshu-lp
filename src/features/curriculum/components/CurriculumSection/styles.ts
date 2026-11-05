@@ -29,7 +29,11 @@ export const Card = styled(motion.div)`
   overflow: hidden;
   border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: ${({ theme }) => theme.radii.sm};
-  padding: 2.5rem;
+  padding: 1.5rem;
+
+  ${media.up("tablet")} {
+    padding: 2.5rem;
+  }
   transition: border-color 0.3s ease;
 
   &:hover {
@@ -40,12 +44,18 @@ export const Card = styled(motion.div)`
 export const Giant = styled.span`
   pointer-events: none;
   position: absolute;
-  top: -2rem;
-  right: -1rem;
+  top: -1rem;
+  right: -0.5rem;
   font-family: ${({ theme }) => theme.fonts.display};
-  font-size: 10rem;
+  font-size: 6rem;
   line-height: 1;
   color: ${({ theme }) => theme.colors.primaryGhost};
+
+  ${media.up("tablet")} {
+    top: -2rem;
+    right: -1rem;
+    font-size: 10rem;
+  }
 `;
 
 export const Label = styled.p`
@@ -60,8 +70,9 @@ export const Label = styled.p`
 export const Title = styled.h3`
   margin: 1rem 0 0;
   font-family: ${({ theme }) => theme.fonts.display};
-  font-size: 2.25rem;
+  font-size: clamp(1.7rem, 7vw, 2.25rem);
   font-weight: 500;
+  text-wrap: balance;
 `;
 
 export const Body = styled.p`

@@ -5,11 +5,15 @@ import { media } from "@/styles/media";
 
 export const SectionShell = styled.section<{ $tone?: "default" | "card" }>`
   position: relative;
-  padding: 6rem ${({ theme }) => theme.layout.gutter};
+  padding: 3.75rem ${({ theme }) => theme.layout.gutter};
   background: ${({ theme, $tone }) =>
     $tone === "card" ? theme.colors.card : theme.colors.background};
 
   ${media.up("tablet")} {
+    padding-block: 6rem;
+  }
+
+  ${media.up("wide")} {
     padding-block: 8rem;
   }
 `;
@@ -17,9 +21,14 @@ export const SectionShell = styled.section<{ $tone?: "default" | "card" }>`
 export const SectionTitle = styled(motion.h2)`
   margin: 0;
   font-family: ${({ theme }) => theme.fonts.display};
-  font-size: clamp(2.25rem, 4.5vw, 3.75rem);
+  font-size: clamp(1.85rem, 8vw, 2.35rem);
   font-weight: 500;
   line-height: 1.15;
+  text-wrap: balance;
+
+  ${media.up("tablet")} {
+    font-size: clamp(2.25rem, 4.5vw, 3.75rem);
+  }
 `;
 
 export const Muted = styled(motion.p)`

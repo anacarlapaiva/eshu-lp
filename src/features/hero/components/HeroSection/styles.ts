@@ -13,6 +13,12 @@ export const Section = styled.section`
   height: 100svh;
   min-height: 640px;
   overflow: hidden;
+
+  ${media.down("tablet")} {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+  }
 `;
 
 export const SlideLayer = styled.div<{ $active: boolean }>`
@@ -55,6 +61,13 @@ export const TopBar = styled.header`
   width: 100%;
   margin: 0 auto;
   padding: 1.5rem;
+
+  ${media.down("tablet")} {
+    position: relative;
+    flex-shrink: 0;
+    align-items: flex-start;
+    padding: calc(0.85rem + env(safe-area-inset-top)) 1.15rem 0;
+  }
 `;
 
 export const Brand = styled.span`
@@ -62,6 +75,13 @@ export const Brand = styled.span`
   font-size: 1.25rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+
+  ${media.down("tablet")} {
+    max-width: 11.5rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    line-height: 1.35;
+  }
 `;
 
 export const TopActions = styled.div`
@@ -106,10 +126,28 @@ export const Content = styled.div`
   height: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
+
+  ${media.down("tablet")} {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    min-height: 0;
+    height: auto;
+    overflow-y: auto;
+    padding: 0.25rem 1.15rem 0.35rem;
+
+    &::before {
+      content: "";
+      flex: 1 1 0;
+      min-height: 0.85rem;
+    }
+  }
 `;
 
 export const Copy = styled.div`
   max-width: 42rem;
+  width: 100%;
 `;
 
 export const Rise = styled.div<{ $delay?: number }>`
@@ -120,12 +158,14 @@ export const Rise = styled.div<{ $delay?: number }>`
 export const Title = styled.h1`
   margin: 0;
   font-family: ${({ theme }) => theme.fonts.display};
-  font-size: 3rem;
+  font-size: clamp(1.7rem, 7.4vw, 2.15rem);
   font-weight: 500;
-  line-height: 1.02;
+  line-height: 1.08;
+  text-wrap: balance;
 
   ${media.up("tablet")} {
     font-size: 3.75rem;
+    line-height: 1.02;
   }
 
   ${media.up("wide")} {
@@ -139,6 +179,12 @@ export const Lead = styled.p`
   color: ${({ theme }) => theme.colors.mutedForeground};
   font-size: 1.125rem;
   line-height: 1.6;
+
+  ${media.down("tablet")} {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
 `;
 
 export const CtaRow = styled.div`
@@ -146,6 +192,11 @@ export const CtaRow = styled.div`
   flex-direction: column;
   gap: 1rem;
   margin-top: 2.5rem;
+
+  ${media.down("tablet")} {
+    gap: 0.55rem;
+    margin-top: 1rem;
+  }
 
   ${media.up("tablet")} {
     flex-direction: row;
@@ -156,6 +207,11 @@ export const CtaRow = styled.div`
 export const Guarantee = styled.span`
   color: ${({ theme }) => theme.colors.mutedForeground};
   font-size: 0.875rem;
+
+  ${media.down("tablet")} {
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
 `;
 
 export const OfferLabel = styled.span`
@@ -168,14 +224,19 @@ export const OfferLabel = styled.span`
 `;
 
 export const OfferLine = styled.span`
-  white-space: nowrap;
+  ${media.up("phone")} {
+    white-space: nowrap;
+  }
 `;
 
 export const OfferNote = styled.span`
   font-size: 0.8125rem;
   font-weight: 500;
   opacity: 0.9;
-  white-space: nowrap;
+
+  ${media.up("phone")} {
+    white-space: nowrap;
+  }
 `;
 
 export const Controls = styled.div`
@@ -191,6 +252,13 @@ export const Controls = styled.div`
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
+
+  ${media.down("tablet")} {
+    position: relative;
+    bottom: auto;
+    flex-shrink: 0;
+    padding: 0.75rem 1.15rem calc(0.85rem + env(safe-area-inset-bottom));
+  }
 `;
 
 export const Dots = styled.div`
@@ -200,11 +268,15 @@ export const Dots = styled.div`
 
 export const DotButton = styled.button<{ $active: boolean; $paused: boolean }>`
   position: relative;
-  width: 2.75rem;
+  width: 2rem;
   height: 3px;
   overflow: hidden;
   border-radius: 999px;
   background: ${({ theme }) => theme.colors.track};
+
+  ${media.up("tablet")} {
+    width: 2.75rem;
+  }
 
   &::after {
     content: "";
@@ -226,8 +298,13 @@ export const Arrows = styled.div`
 export const ArrowButton = styled.button`
   display: grid;
   place-items: center;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2.4rem;
+  height: 2.4rem;
+
+  ${media.up("tablet")} {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
   border: 1px solid ${({ theme }) => theme.colors.controlBorder};
   border-radius: 999px;
   color: ${({ theme }) => theme.colors.foreground};
@@ -253,8 +330,12 @@ export const ScrollHint = styled.div`
   bottom: 5.5rem;
   left: 50%;
   z-index: 20;
-  display: grid;
+  display: none;
   place-items: center;
+
+  ${media.up("tablet")} {
+    display: grid;
+  }
   color: ${({ theme }) => theme.colors.accent};
   transform: translateX(-50%);
   animation: rise 1.2s ease 1s both;

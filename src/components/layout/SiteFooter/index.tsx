@@ -1,9 +1,17 @@
-import { Footer, Inner, Line, Small, Title } from "./styles";
+import { courseMockups } from "@/constants/assets";
+
+import { Footer, Inner, Line, Mark, Small, Title } from "./styles";
 
 export function SiteFooter() {
   return (
     <Footer>
       <Inner>
+        <Mark
+          src={courseMockups.footer}
+          alt="Escola do Pentagrama, Voice of Eshu on laptop, phone, and tablet"
+          width={1400}
+          height={1241}
+        />
         <Title>Eshu: The Guardian at the Crossroads</Title>
         <Line>Iyá Ifagbemisola · Ju Laroye</Line>
         <Small>

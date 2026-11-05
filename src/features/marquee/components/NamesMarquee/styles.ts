@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { media } from "@/styles/media";
+
 export const Band = styled.div`
   overflow: hidden;
   border-block: 1px solid ${({ theme }) => theme.colors.border};
@@ -13,7 +15,11 @@ export const Track = styled.div`
   gap: 3rem;
   white-space: nowrap;
   font-family: ${({ theme }) => theme.fonts.display};
-  font-size: 1.5rem;
+  font-size: 1.15rem;
+
+  ${media.up("tablet")} {
+    font-size: 1.5rem;
+  }
   font-style: italic;
   color: ${({ theme }) => theme.colors.mutedForeground};
   animation: marquee 40s linear infinite;
