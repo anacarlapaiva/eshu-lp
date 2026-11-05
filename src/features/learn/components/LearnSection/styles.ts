@@ -3,53 +3,52 @@ import styled from "styled-components";
 
 import { media } from "@/styles/media";
 
-export const Intro = styled.div`
-  max-width: 42rem;
-  margin-bottom: 4rem;
-`;
-
-export const Grid = styled.div`
+export const Layout = styled.div`
   display: grid;
-  gap: 1px;
-  overflow: hidden;
-  border: 1px solid ${({ theme }) => theme.colors.border};
-  border-radius: ${({ theme }) => theme.radii.sm};
-  background: ${({ theme }) => theme.colors.border};
+  gap: 3rem;
 
-  ${media.up("desktop")} {
-    grid-template-columns: 1fr 1fr;
+  ${media.up("wide")} {
+    grid-template-columns: minmax(16rem, 0.85fr) 1.3fr;
+    gap: 5rem;
+    align-items: start;
   }
 `;
 
-export const Card = styled(motion.div)`
-  background: ${({ theme }) => theme.colors.background};
-  padding: 2rem;
-  transition: background 0.3s ease;
+export const Intro = styled.div`
+  ${media.up("wide")} {
+    position: sticky;
+    top: 6rem;
+  }
+`;
 
-  &:hover {
-    background: ${({ theme }) => theme.colors.card};
+export const List = styled.div`
+  border-top: 1px solid ${({ theme }) => theme.colors.border};
+`;
+
+export const Row = styled(motion.article)`
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0.75rem 1.25rem;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+
+  ${media.up("tablet")} {
+    grid-template-columns: 3rem 1fr;
+    gap: 1.5rem;
+    padding: 1.6rem 0;
   }
 `;
 
 export const Number = styled.span`
-  display: block;
   font-family: ${({ theme }) => theme.fonts.display};
-  font-size: 3rem;
-  color: ${({ theme }) => theme.colors.primarySoftText};
-  transition: color 0.3s ease;
-
-  ${Card}:hover & {
-    color: ${({ theme }) => theme.colors.accent};
-  }
+  font-size: 1.15rem;
+  color: ${({ theme }) => theme.colors.accent};
+  padding-top: 0.35rem;
 `;
 
 export const Text = styled.p`
-  margin: 1rem 0 0;
+  margin: 0;
   color: ${({ theme }) => theme.colors.mutedForeground};
+  font-size: 1.05rem;
   line-height: 1.7;
-  transition: color 0.3s ease;
-
-  ${Card}:hover & {
-    color: ${({ theme }) => theme.colors.foreground};
-  }
 `;

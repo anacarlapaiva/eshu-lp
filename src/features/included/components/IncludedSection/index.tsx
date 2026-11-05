@@ -1,4 +1,4 @@
-import { Check, Gift } from "lucide-react";
+import { Gift } from "lucide-react";
 
 import { Container, SectionEyebrow } from "@/components";
 import { revealOnScroll } from "@/animations";
@@ -15,6 +15,7 @@ import {
   CardBody,
   CardTitle,
   Grid,
+  Index,
   Intro,
 } from "./styles";
 
@@ -30,7 +31,7 @@ export function IncludedSection() {
         <Grid>
           {inclusions.map((item, index) => (
             <Card key={item.title} {...revealOnScroll(index * 70)}>
-              <Check aria-hidden />
+              <Index>{String(index + 1).padStart(2, "0")}</Index>
               <CardTitle>{item.title}</CardTitle>
               <CardBody>{item.body}</CardBody>
             </Card>

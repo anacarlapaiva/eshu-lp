@@ -15,6 +15,7 @@ export const Grid = styled.div`
 
 export const ImageFrame = styled(motion.div)`
   position: relative;
+  margin-bottom: 0.5rem;
 `;
 
 export const Border = styled.div`
@@ -28,10 +29,34 @@ export const Image = styled.img`
   position: relative;
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: auto;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
-  object-position: left;
+  object-position: center 42%;
   border-radius: ${({ theme }) => theme.radii.sm};
+`;
+
+export const Secondary = styled.img`
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  z-index: 2;
+  width: 27%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 22%;
+  border: 4px solid ${({ theme }) => theme.colors.card};
+  border-radius: ${({ theme }) => theme.radii.sm};
+  box-shadow: 0 16px 36px rgb(0 0 0 / 0.35);
+`;
+
+export const Caption = styled.p`
+  margin: 0.5rem 0 0;
+  color: ${({ theme }) => theme.colors.accent};
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 `;
 
 export const Quote = styled.em`

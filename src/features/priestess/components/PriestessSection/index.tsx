@@ -1,9 +1,9 @@
 import { Container, GoldText, SectionEyebrow } from "@/components";
 import { revealOnScroll } from "@/animations";
-import { heroImages } from "@/constants/assets";
+import { portraits } from "@/constants/assets";
 import { BodyStack, Muted, SectionShell, SectionTitle } from "@/features/shared/sectionStyles";
 
-import { Border, Grid, Image, ImageFrame, Quote } from "./styles";
+import { Border, Grid, Image, ImageFrame, Quote, Secondary } from "./styles";
 
 export function PriestessSection() {
   return (
@@ -13,15 +13,22 @@ export function PriestessSection() {
           <ImageFrame {...revealOnScroll()}>
             <Border aria-hidden />
             <Image
-              src={heroImages.priestess}
-              alt="Priestess at an opening forest path"
+              src={portraits.ju}
+              alt="Iyá Ju Laroye smiling, hands together in greeting"
               loading="lazy"
-              width={1920}
-              height={1088}
+              width={1280}
+              height={720}
+            />
+            <Secondary
+              src={portraits.altar}
+              alt="Iyá Ju Laroye in front of a wall of sacred statues"
+              loading="lazy"
+              width={800}
+              height={1000}
             />
           </ImageFrame>
           <div>
-            <SectionEyebrow>Your Priestess</SectionEyebrow>
+            <SectionEyebrow>Who is your Priestess</SectionEyebrow>
             <SectionTitle {...revealOnScroll(40)}>
               Iyá Ifagbemisola · <GoldText>Ju Laroye</GoldText>
             </SectionTitle>
@@ -32,8 +39,9 @@ export function PriestessSection() {
               </Muted>
               <Muted {...revealOnScroll(120)}>
                 She is an ordained Priestess of Sacred Umbanda, initiated in Ifá and the Magic of
-                Fire. She's also a professional conference interpreter, so when she explains the
-                cosmology of the Orishas in English, nothing is lost in translation.
+                Fire. She's also a professional conference interpreter, which means when she explains
+                the cosmology of the Orishas to English-speaking students, she's not just translating
+                words. She's translating worlds.
               </Muted>
               <Muted {...revealOnScroll(160)}>
                 She created this course for a simple reason: every time she taught this material
@@ -42,10 +50,11 @@ export function PriestessSection() {
                   "Why has no one ever explained this in a way that made sense before?"
                 </Quote>
               </Muted>
+              <Muted {...revealOnScroll(180)}>That question is why this course exists.</Muted>
               <Muted {...revealOnScroll(200)}>
-                Her approach is educational, and she won't ask you to believe anything. She wants you
-                to understand the history, the philosophy, and the cultural context first, and then
-                decide for yourself what to do with it.
+                Her approach is not devotional. She doesn't ask you to believe anything. She asks you
+                to understand the history, the philosophy, the cultural context, before you decide
+                what to do with it. That respect for your autonomy is intentional. It's also rare.
               </Muted>
             </BodyStack>
           </div>

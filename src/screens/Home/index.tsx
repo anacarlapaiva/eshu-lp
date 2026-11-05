@@ -10,6 +10,7 @@ import { LearnSection } from "@/features/learn";
 import { NamesMarquee } from "@/features/marquee";
 import { OfferSection } from "@/features/offer";
 import { PriestessSection } from "@/features/priestess";
+import { ShowcaseSection } from "@/features/showcase";
 import { TestimonialsSection, testimonialsA, testimonialsB } from "@/features/testimonials";
 import { WhoSection } from "@/features/who";
 
@@ -26,6 +27,7 @@ export function HomeScreen() {
         <CurriculumSection />
         <PriestessSection />
         <IncludedSection />
+        <ShowcaseSection />
         <OfferSection />
         <TestimonialsSection items={testimonialsB} tone="card" />
         <FaqSection />

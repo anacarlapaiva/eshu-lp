@@ -72,9 +72,11 @@ export const TopActions = styled.div`
 
 export const TopCta = styled.a`
   display: none;
-  border: 1px solid ${({ theme }) => theme.colors.border};
+  align-items: center;
+  height: 2.25rem;
+  border: 1px solid ${({ theme }) => theme.colors.accent};
   border-radius: ${({ theme }) => theme.radii.pill};
-  padding: 0.5rem 1.25rem;
+  padding: 0 1.25rem;
   color: ${({ theme }) => theme.colors.accent};
   font-size: 0.75rem;
   font-weight: 600;
@@ -90,7 +92,7 @@ export const TopCta = styled.a`
   }
 
   ${media.up("tablet")} {
-    display: inline-block;
+    display: inline-flex;
   }
 `;
 

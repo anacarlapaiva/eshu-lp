@@ -6,6 +6,7 @@ import { media } from "@/styles/media";
 export const Section = styled.section`
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 1.5rem;
   padding: 7rem ${({ theme }) => theme.layout.gutter};
 `;
 

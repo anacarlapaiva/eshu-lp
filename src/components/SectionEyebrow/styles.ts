@@ -11,10 +11,3 @@ export const Eyebrow = styled.p`
   letter-spacing: 0.35em;
   text-transform: uppercase;
 `;
-
-export const Rule = styled.span`
-  display: inline-block;
-  width: 2.5rem;
-  height: 1px;
-  background: ${({ theme }) => theme.colors.accent};
-`;

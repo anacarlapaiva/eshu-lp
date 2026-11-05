@@ -22,10 +22,17 @@ Landing page do curso **Voice of Eshu**.
 ## Scripts
 
 ```sh
-yarn dev      # http://localhost:5173
+yarn dev      # http://localhost:5173/eshu-lp/
 yarn build    # tsc -b && vite build
 yarn lint
 ```
+
+## GitHub Pages
+
+Site: `https://anacarlapaiva.github.io/eshu-lp/`
+
+1. Repo → **Settings → Pages → Source: GitHub Actions**
+2. Merge/push na `main` (workflow `.github/workflows/deploy.yml`)
 
 ## Arquitetura
 

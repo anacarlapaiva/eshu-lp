@@ -10,23 +10,21 @@ export const Intro = styled.div`
 `;
 
 export const Grid = styled.div`
-  display: grid;
-  gap: 1.5rem;
-
-  ${media.up("desktop")} {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  ${media.up("wide")} {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
 `;
 
-export const Card = styled(motion.div)`
+export const Card = styled(motion.article)`
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 16rem;
+  max-width: 22rem;
   border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: ${({ theme }) => theme.radii.sm};
   background: ${({ theme }) => theme.colors.card};
-  padding: 2rem;
+  padding: 1.75rem 1.75rem 1.9rem;
   transition:
     transform 0.3s ease,
     border-color 0.3s ease;
@@ -35,12 +33,13 @@ export const Card = styled(motion.div)`
     transform: translateY(-4px);
     border-color: ${({ theme }) => theme.colors.accent}80;
   }
+`;
 
-  svg {
-    width: 1.5rem;
-    height: 1.5rem;
-    color: ${({ theme }) => theme.colors.accent};
-  }
+export const Index = styled.span`
+  font-family: ${({ theme }) => theme.fonts.display};
+  font-size: 1.35rem;
+  line-height: 1;
+  color: ${({ theme }) => theme.colors.accent};
 `;
 
 export const CardTitle = styled.h3`
