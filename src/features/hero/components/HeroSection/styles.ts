@@ -158,6 +158,26 @@ export const Guarantee = styled.span`
   font-size: 0.875rem;
 `;
 
+export const OfferLabel = styled.span`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  line-height: 1.15;
+  text-align: left;
+`;
+
+export const OfferLine = styled.span`
+  white-space: nowrap;
+`;
+
+export const OfferNote = styled.span`
+  font-size: 0.8125rem;
+  font-weight: 500;
+  opacity: 0.9;
+  white-space: nowrap;
+`;
+
 export const Controls = styled.div`
   position: absolute;
   right: 0;
@@ -180,7 +200,7 @@ export const Dots = styled.div`
 
 export const DotButton = styled.button<{ $active: boolean; $paused: boolean }>`
   position: relative;
-  width: 2.5rem;
+  width: 2.75rem;
   height: 3px;
   overflow: hidden;
   border-radius: 999px;
@@ -190,11 +210,11 @@ export const DotButton = styled.button<{ $active: boolean; $paused: boolean }>`
     content: "";
     position: absolute;
     inset: 0;
+    transform: scaleX(0);
     transform-origin: left center;
     background: ${({ theme }) => theme.colors.accent};
-    transform: scaleX(${({ $active }) => ($active ? 1 : 0)});
-    animation: ${({ $active, $paused }) =>
-      $active && !$paused ? progressFill : "none"} 6s linear forwards;
+    animation: ${({ $active }) => ($active ? progressFill : "none")} 6s linear forwards;
+    animation-play-state: ${({ $paused }) => ($paused ? "paused" : "running")};
   }
 `;
 

@@ -19,6 +19,9 @@ import {
   GradientY,
   Guarantee,
   Lead,
+  OfferLabel,
+  OfferLine,
+  OfferNote,
   Rise,
   ScrollHint,
   Section,
@@ -61,7 +64,7 @@ export function HeroSection() {
       }}
     >
       {heroSlides.map((item, slideIndex) => (
-        <SlideLayer key={item.eyebrow} $active={slideIndex === index} aria-hidden={slideIndex !== index}>
+        <SlideLayer key={item.img} $active={slideIndex === index} aria-hidden={slideIndex !== index}>
           <SlideImage
             src={item.img}
             alt=""
@@ -99,7 +102,12 @@ export function HeroSection() {
           <Rise $delay={360}>
             <CtaRow>
               <EnrollButton>
-                Enroll from <s>$197</s> to $97 only this Black Friday
+                <OfferLabel>
+                  <OfferLine>
+                    Enroll from <s>$197</s> to $97
+                  </OfferLine>
+                  <OfferNote>only this Black Friday</OfferNote>
+                </OfferLabel>
               </EnrollButton>
               <Guarantee>Instant access & 7-day money-back guarantee.</Guarantee>
             </CtaRow>
@@ -115,7 +123,7 @@ export function HeroSection() {
         <Dots>
           {heroSlides.map((item, slideIndex) => (
             <DotButton
-              key={`${item.eyebrow}-${slideIndex === index ? index : "idle"}-${paused}`}
+              key={item.img}
               type="button"
               aria-label={`Slide ${slideIndex + 1}`}
               $active={slideIndex === index}
