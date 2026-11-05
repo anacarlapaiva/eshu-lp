@@ -2,12 +2,12 @@ export const faqItems = [
   {
     question: "I'm not from this tradition. Is it safe and respectful for me to study this?",
     answer:
-      "Yes. This school was created to teach this tradition to people outside Brazil. Iyá Ju's work is to build a culturally accurate bridge between this knowledge and those who want to understand it. All you need is curiosity and respect. The course covers everything else.",
+      "Yes. This school was created to teach this tradition to people outside Brazil. Iyá Ju's work is to build a culturally accurate bridge between this knowledge and those who want to understand it. Curiosity and respect are what you need. The course provides the rest.",
   },
   {
     question: "Do I need previous knowledge or initiation?",
     answer:
-      "No. The first lessons establish the historical, cultural, and spiritual foundations before moving into Eshu. No prior experience and no initiation required.",
+      "No. The first lessons establish the historical, cultural, and spiritual foundations before moving into Exu. No prior experience and no initiation required.",
   },
   {
     question: "Is this a religious course?",

@@ -19,15 +19,18 @@ export function IntroSection() {
             crossroads.
           </Sub>
           <Sub {...revealOnScroll(160)}>
-            Some traditions have understood this for a long time. For them it is a problem with a
-            name, a logic, and a guide assigned to it:
+            There are traditions that have understood this for a long time, and not as a character
+            flaw or bad luck.
+          </Sub>
+          <Sub {...revealOnScroll(200)}>
+            As a problem with a name, a logic, and a guide assigned to it:
           </Sub>
           <EshuWord {...revealOnScroll(240)}>
             <GoldText>ESHU</GoldText>
           </EshuWord>
           <Closing {...revealOnScroll(320)}>
-            This course introduces you to that guide and shows how his energy can help you move
-            forward.
+            This course introduces you to that guide and his energy that can help you navigate this
+            path.
           </Closing>
         </Wrap>
       </Container>

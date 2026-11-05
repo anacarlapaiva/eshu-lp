@@ -27,7 +27,7 @@ export function OfferSection() {
       <EmberField />
       <Card {...revealOnScroll()}>
         <Badge>Black Friday</Badge>
-        <Title>A Limited Time Offer</Title>
+        <Title>Black Friday is a Limited Time Offer</Title>
         <Copy>
           Voice of Eshu is normally $197. For Black Friday, the full course, including all bonuses,
           is available at:

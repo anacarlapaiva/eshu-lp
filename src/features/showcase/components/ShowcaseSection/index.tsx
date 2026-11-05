@@ -34,7 +34,12 @@ import {
   Warm,
 } from "./styles";
 
-const promises = ["Ancestral wisdom", "Spiritual protection", "Divine guidance", "A more aligned you"];
+const promises = [
+  "Movement",
+  "Decision",
+  "Change",
+  "The firmeza",
+];
 
 function CourseCover() {
   return (
@@ -59,7 +64,7 @@ function CourseCover() {
       </Cross>
       <CoverWord>Eshu</CoverWord>
       <CoverLine>The guardian of the crossroads</CoverLine>
-      <CoverLine $quiet>Wisdom, protection, alignment</CoverLine>
+      <CoverLine $quiet>Voice of Eshu</CoverLine>
     </Cover>
   );
 }
@@ -70,10 +75,10 @@ export function ShowcaseSection() {
       <Container width="wide">
         <Intro>
           <SectionEyebrow>Voice of Eshu</SectionEyebrow>
-          <SectionTitle {...revealOnScroll()}>Take the course with you</SectionTitle>
+          <SectionTitle {...revealOnScroll()}>A 13-lesson self-paced course</SectionTitle>
           <Lead>
-            The lessons, the ritual, and Ju Laroye's voice. Open them on the screen you already
-            have.
+            With Priestess Iyá Ju Laroye on the Afro-Brazilian spirit guide of movement, decision,
+            and change.
           </Lead>
         </Intro>
 
@@ -98,7 +103,7 @@ export function ShowcaseSection() {
                 <TabletScreen>
                   <img
                     src={portraits.ju}
-                    alt="Iyá Ju Laroye, your teacher in Voice of Eshu"
+                    alt="Iyá Ju Laroye, Priestess of Sacred Umbanda"
                   />
                   <Warm />
                   <Promises>
@@ -122,7 +127,7 @@ export function ShowcaseSection() {
         </Frame>
 
         <Action>
-          <OfferLink href="#offer">See the offer</OfferLink>
+          <OfferLink href="#offer">Enroll from $197 to $97</OfferLink>
         </Action>
       </Container>
     </SectionShell>

@@ -36,13 +36,13 @@ export function WhoSection() {
                 a path opens, he's the one who opened it.
               </Muted>
               <Muted {...revealOnScroll(160)}>
-                Similar guides appear across traditions, as Elegba in West Africa, as Legba in Haiti,
-                as Eleguá in Cuba. The names change, but the presence is the same: the guardian of thresholds, the
-                first to be honored before any spiritual work begins.
+                Similar guides as him appear across traditions, as Elegba in West Africa, as Legba
+                in Haiti, as Eleguá in Cuba. Different names, same presence: the guardian of
+                thresholds, the first to be honored before any spiritual work begins.
               </Muted>
               <Frame {...revealOnScroll(200)}>
-                For centuries, colonial missionaries described him as a devil figure. In this course,
-                you will learn who he really is.
+                For centuries, colonial missionaries described him as a devil figure. That story is a
+                lie, so we'll tell you the original one.
               </Frame>
             </BodyStack>
           </div>

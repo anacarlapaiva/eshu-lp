@@ -3,7 +3,7 @@ import { revealOnScroll } from "@/animations";
 import { portraits } from "@/constants/assets";
 import { BodyStack, Muted, SectionShell, SectionTitle } from "@/features/shared/sectionStyles";
 
-import { Border, Caption, Grid, Image, ImageFrame, Quote, Secondary } from "./styles";
+import { Border, Grid, Image, ImageFrame, Quote, Secondary } from "./styles";
 
 export function PriestessSection() {
   return (
@@ -28,19 +28,20 @@ export function PriestessSection() {
             />
           </ImageFrame>
           <div>
-            <SectionEyebrow>Your Priestess</SectionEyebrow>
+            <SectionEyebrow>Who is your Priestess</SectionEyebrow>
             <SectionTitle {...revealOnScroll(40)}>
               Iyá Ifagbemisola · <GoldText>Ju Laroye</GoldText>
             </SectionTitle>
             <BodyStack>
               <Muted {...revealOnScroll(80)}>
-                Ju Laroye founded Escola do Pentagrama. She has been studying Afro-Brazilian
-                spiritual traditions for more than 20 years, and she is the voice in every lesson.
+                Ju Laroye has been studying Afro-Brazilian spiritual traditions for more than 20
+                years.
               </Muted>
               <Muted {...revealOnScroll(120)}>
                 She is an ordained Priestess of Sacred Umbanda, initiated in Ifá and the Magic of
-                Fire. She's also a professional conference interpreter, so when she explains the
-                cosmology of the Orishas in English, nothing is lost in translation.
+                Fire. She's also a professional conference interpreter, which means when she explains
+                the cosmology of the Orishas to English-speaking students, she's not just translating
+                words. She's translating worlds.
               </Muted>
               <Muted {...revealOnScroll(160)}>
                 She created this course for a simple reason: every time she taught this material
@@ -49,12 +50,12 @@ export function PriestessSection() {
                   "Why has no one ever explained this in a way that made sense before?"
                 </Quote>
               </Muted>
+              <Muted {...revealOnScroll(180)}>That question is why this course exists.</Muted>
               <Muted {...revealOnScroll(200)}>
-                Her approach is educational, and she won't ask you to believe anything. She wants you
-                to understand the history, the philosophy, and the cultural context first, and then
-                decide for yourself what to do with it.
+                Her approach is not devotional. She doesn't ask you to believe anything. She asks you
+                to understand the history, the philosophy, the cultural context, before you decide
+                what to do with it. That respect for your autonomy is intentional. It's also rare.
               </Muted>
-              <Caption>Priestess and founder of Escola do Pentagrama.</Caption>
             </BodyStack>
           </div>
         </Grid>

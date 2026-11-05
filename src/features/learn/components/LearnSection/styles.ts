@@ -21,14 +21,6 @@ export const Intro = styled.div`
   }
 `;
 
-export const Lead = styled.p`
-  margin: 1.5rem 0 0;
-  max-width: 22rem;
-  color: ${({ theme }) => theme.colors.mutedForeground};
-  font-size: 1.05rem;
-  line-height: 1.7;
-`;
-
 export const List = styled.div`
   border-top: 1px solid ${({ theme }) => theme.colors.border};
 `;
@@ -54,16 +46,9 @@ export const Number = styled.span`
   padding-top: 0.35rem;
 `;
 
-export const Title = styled.h3`
-  margin: 0;
-  font-family: ${({ theme }) => theme.fonts.display};
-  font-size: clamp(1.45rem, 2vw, 1.85rem);
-  font-weight: 500;
-  line-height: 1.2;
-`;
-
 export const Text = styled.p`
-  margin: 0.45rem 0 0;
+  margin: 0;
   color: ${({ theme }) => theme.colors.mutedForeground};
-  line-height: 1.65;
+  font-size: 1.05rem;
+  line-height: 1.7;
 `;

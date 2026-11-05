@@ -99,9 +99,9 @@ export function HeroSection() {
           <Rise $delay={360}>
             <CtaRow>
               <EnrollButton>
-                Enroll from <s>$197</s> to $97
+                Enroll from <s>$197</s> to $97 only this Black Friday
               </EnrollButton>
-              <Guarantee>Instant access · 7-day money-back guarantee</Guarantee>
+              <Guarantee>Instant access & 7-day money-back guarantee.</Guarantee>
             </CtaRow>
           </Rise>
         </Copy>
