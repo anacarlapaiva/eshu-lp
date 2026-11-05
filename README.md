@@ -1,6 +1,6 @@
 # Voice of Eshu — Landing Page
 
-Landing page do curso **Voice of Eshu** (Escola do Pentagrama), recriada a partir do layout Lovable nos mesmos moldes do Match Protein.
+Landing page do curso **Voice of Eshu**.
 
 ## Stack
 
