@@ -88,7 +88,7 @@ export function HeroSection() {
       <Content>
         <Copy key={slide.eyebrow}>
           <Rise>
-            <SectionEyebrow withRule>{slide.eyebrow}</SectionEyebrow>
+            <SectionEyebrow>{slide.eyebrow}</SectionEyebrow>
           </Rise>
           <Rise $delay={120}>
             <Title>{slide.title}</Title>
