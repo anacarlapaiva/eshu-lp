@@ -29,11 +29,6 @@ export const bonuses = [
   },
   {
     price: "$17",
-    title: "The Voice of Eshu e-book",
-    body: "Five sacred Umbanda chants, translated, explained linguistically and anthropologically, with pronunciation and meaning. Each one includes a private YouTube link so you can hear it, not just read it.",
-  },
-  {
-    price: "$17",
     title: "Sacred Chants Playlist",
     body: "A curated audio collection to return to the chants by ear, at your own pace.",
   },

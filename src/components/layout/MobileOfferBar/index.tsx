@@ -23,7 +23,7 @@ export function MobileOfferBar() {
 
   return (
     <Bar $visible={visible} aria-label="Black Friday offer" aria-hidden={!visible}>
-      <Thumb src={courseMockups.seal} alt="" />
+      <Thumb src={courseMockups.footer} alt="" />
       <Offer>
         <Price>
           <Old>$197</Old>

@@ -3,7 +3,7 @@ import { revealOnScroll } from "@/animations";
 import { portraits } from "@/constants/assets";
 import { BodyStack, Muted, SectionShell, SectionTitle } from "@/features/shared/sectionStyles";
 
-import { Border, Grid, Image, ImageFrame, Quote, Secondary } from "./styles";
+import { Border, Grid, Image, ImageFrame, Quote } from "./styles";
 
 export function PriestessSection() {
   return (
@@ -18,13 +18,6 @@ export function PriestessSection() {
               loading="lazy"
               width={1280}
               height={720}
-            />
-            <Secondary
-              src={portraits.altar}
-              alt="Iyá Ju Laroye in front of a wall of sacred statues"
-              loading="lazy"
-              width={800}
-              height={1000}
             />
           </ImageFrame>
           <div>

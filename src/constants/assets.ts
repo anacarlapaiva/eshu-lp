@@ -8,7 +8,6 @@ export const heroImages = {
 
 export const portraits = {
   ju: `${base}images/ju-portrait.jpg`,
-  altar: `${base}images/ju-altar.jpg`,
 } as const;
 
 export const courseMockups = {

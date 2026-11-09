@@ -36,21 +36,6 @@ export const Image = styled.img`
   border-radius: ${({ theme }) => theme.radii.sm};
 `;
 
-export const Secondary = styled.img`
-  position: absolute;
-  right: 0.85rem;
-  bottom: 0.85rem;
-  z-index: 2;
-  width: 27%;
-  height: auto;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center 22%;
-  border: 4px solid ${({ theme }) => theme.colors.card};
-  border-radius: ${({ theme }) => theme.radii.sm};
-  box-shadow: 0 16px 36px rgb(0 0 0 / 0.35);
-`;
-
 export const Caption = styled.p`
   margin: 0.5rem 0 0;
   color: ${({ theme }) => theme.colors.accent};
