@@ -13,8 +13,8 @@ export function ShowcaseSection() {
           <SectionEyebrow>Voice of Eshu</SectionEyebrow>
           <SectionTitle {...revealOnScroll()}>A 13-lesson self-paced course</SectionTitle>
           <Lead>
-            With Priestess Iyá Ju Laroye on the Afro-Brazilian spirit guide of movement, decision,
-            and change.
+            With Priestess Iyá Ju Laroye on the Afro-Brazilian spirit guide named Eshu, of movement,
+            decision, and change.
           </Lead>
         </Intro>
 
