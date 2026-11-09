@@ -12,7 +12,7 @@ export function FinalCtaSection() {
         <Title>
           The crossroads has always had a guardian. <GoldText>Now you can meet him.</GoldText>
         </Title>
-        <Lead>Voice of Eshu · $97 through November 27th · Instant access</Lead>
+        <Lead>Eshu: The Guardian at the Crossroads · $97 through November 27th · Instant access</Lead>
         <EnrollButton variant="cta">Enroll Now</EnrollButton>
       </Content>
     </Section>

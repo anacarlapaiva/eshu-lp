@@ -23,7 +23,7 @@ export function PriestessSection() {
           <div>
             <SectionEyebrow>Who is your Priestess</SectionEyebrow>
             <SectionTitle {...revealOnScroll(40)}>
-              Iyá Ifagbemisola · <GoldText>Ju Laroye</GoldText>
+              Iyá Ifagbemisola — <GoldText>Ju Laroye</GoldText>
             </SectionTitle>
             <BodyStack>
               <Muted {...revealOnScroll(80)}>

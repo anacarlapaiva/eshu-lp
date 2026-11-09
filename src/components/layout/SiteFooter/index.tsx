@@ -13,7 +13,7 @@ export function SiteFooter() {
           height={1241}
         />
         <Title>Eshu: The Guardian at the Crossroads</Title>
-        <Line>Iyá Ifagbemisola · Ju Laroye</Line>
+        <Line>Iyá Ifagbemisola — Ju Laroye</Line>
         <Small>
           <strong>Educational & spiritual growth disclaimer.</strong> Eshu: The Guardian at the
           Crossroads and all Escola do Pentagrama content are intended for educational and spiritual

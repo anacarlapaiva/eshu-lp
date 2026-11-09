@@ -27,8 +27,8 @@ export function WhoSection() {
             </SectionTitle>
             <BodyStack>
               <Muted {...revealOnScroll(80)}>
-                In the Afro-Brazilian tradition called Sacred Umbanda, there is a spirit guide named
-                Eshu.
+                In the Afro-Brazilian tradition called Sacred Umbanda, there is more than a spirit
+                guide, there is an Orisha named Eshu.
               </Muted>
               <Muted {...revealOnScroll(120)}>
                 He's the force that stands at every crossroads. The one who governs movement,

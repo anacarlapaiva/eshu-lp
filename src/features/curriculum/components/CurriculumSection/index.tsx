@@ -12,7 +12,7 @@ export function CurriculumSection() {
         <Intro>
           <SectionEyebrow>Curriculum</SectionEyebrow>
           <SectionTitle {...revealOnScroll()}>What You'll Cover</SectionTitle>
-          <Lead>The course runs in two parts.</Lead>
+          <Lead>The course runs in 2 parts.</Lead>
         </Intro>
         <Grid>
           {curriculumParts.map((part, index) => (

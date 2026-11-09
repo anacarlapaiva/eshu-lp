@@ -23,7 +23,7 @@ export const heroSlides: HeroSlide[] = [
       " and ",
       createElement(GoldText, null, "opens paths"),
     ),
-    text: "A 13-lesson self-paced course with Priestess Iyá Ju Laroye on the Afro-Brazilian spirit guide named Eshu, of movement, decision, and change, and how to call on that energy in your own life.",
+    text: "A 13-lesson self-paced course with Priestess Iyá Ju Laroye on the Afro-Brazilian spirit guide of movement, decision, and change and how to call on that energy in your own life.",
   },
   {
     img: heroImages.path,

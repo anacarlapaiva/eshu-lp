@@ -24,7 +24,7 @@ export const testimonialsB: Testimonial[] = [
   },
   {
     quote:
-      "My experience was nothing short of mind blowing. This is not a class for the faint of heart. It is for those with a genuine desire to understand and connect. What Ju teaches goes far beyond what you'll find online.",
+      "My experience was nothing short of mind blowing. This is not a class for the faint of heart — it is for those with a genuine desire to understand and connect. What Ju teaches goes far beyond what you'll find online.",
     author: "Monique Benabou, California",
   },
 ];
