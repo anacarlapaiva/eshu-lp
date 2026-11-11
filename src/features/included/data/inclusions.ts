@@ -1,7 +1,7 @@
 export const inclusions = [
   {
     title: "13 video lessons",
-    body: "Self-paced, with lifetime access. Watch in any order, return as often as you need.",
+    body: "Self-paced, with 12 months access. Watch in any order, return as often as you need.",
   },
   {
     title: "Module handouts",
