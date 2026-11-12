@@ -13,5 +13,5 @@ export const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: "/eshu-lp" },
+  { basename: import.meta.env.BASE_URL.replace(/\/$/, "") || "/" },
 );

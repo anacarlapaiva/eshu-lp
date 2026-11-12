@@ -4,7 +4,8 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/eshu-lp/",
+  // Root path for Cloudflare Pages; override with --base for GitHub Pages if needed.
+  base: "/",
   plugins: [react()],
   resolve: {
     alias: {
