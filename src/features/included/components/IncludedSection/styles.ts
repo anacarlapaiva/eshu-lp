@@ -62,7 +62,7 @@ export const BonusGrid = styled.div`
   margin-top: 5rem;
 
   ${media.up("wide")} {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 `;
 

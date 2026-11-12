@@ -1,7 +1,7 @@
 import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
-import { EmberField, EnrollButton, SectionEyebrow, ThemeToggle } from "@/components";
+import { EmberField, EnrollButton, ThemeToggle } from "@/components";
 import { enrollLinkProps } from "@/constants/links";
 import { heroSlides } from "@/features/hero/data/slides";
 
@@ -18,6 +18,7 @@ import {
   GradientX,
   GradientY,
   Guarantee,
+  HeroEyebrow,
   Lead,
   OfferLabel,
   OfferLine,
@@ -92,7 +93,7 @@ export function HeroSection() {
       <Content>
         <Copy key={slide.eyebrow}>
           <Rise>
-            <SectionEyebrow>{slide.eyebrow}</SectionEyebrow>
+            <HeroEyebrow>{slide.eyebrow}</HeroEyebrow>
           </Rise>
           <Rise $delay={120}>
             <Title>{slide.title}</Title>

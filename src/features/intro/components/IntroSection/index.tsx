@@ -23,13 +23,13 @@ export function IntroSection() {
             flaw or bad luck.
           </Sub>
           <Sub {...revealOnScroll(200)}>
-            As a problem with a name, a logic, and a guide assigned to it:
+            As a problem with a name, a logic, and a guardian assigned to it:
           </Sub>
           <EshuWord {...revealOnScroll(240)}>
             <GoldText>ESHU</GoldText>
           </EshuWord>
           <Closing {...revealOnScroll(320)}>
-            This course introduces you to that guide and his energy that can help you navigate this
+            This course introduces you to that guardian and his energy that can help you navigate this
             path.
           </Closing>
         </Wrap>

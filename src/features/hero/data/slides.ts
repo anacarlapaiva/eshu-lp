@@ -14,20 +14,20 @@ export interface HeroSlide {
 export const heroSlides: HeroSlide[] = [
   {
     img: heroImages.crossroads,
-    eyebrow: "Voice of Eshu",
+    eyebrow: "Eshu: The Guardian at the Crossroads",
     title: createElement(
       "span",
       null,
-      "Learn how to work with the spirit guide who ",
-      createElement(GoldText, null, "clears blocks"),
+      "Learn how to work with Eshu to ",
+      createElement(GoldText, null, "clear blocks"),
       " and ",
-      createElement(GoldText, null, "opens paths"),
+      createElement(GoldText, null, "open paths"),
     ),
-    text: "A 13-lesson self-paced course with Priestess Iyá Ju Laroye on the Afro-Brazilian spirit guide of movement, decision, and change and how to call on that energy in your own life.",
+    text: "A 13-lesson self-paced course with Priestess Iyá Ju Laroye on the Afro-Brazilian guardian of movement, decision, and change and how to call on that energy in your own life.",
   },
   {
     img: heroImages.path,
-    eyebrow: "Voice of Eshu",
+    eyebrow: "Eshu: The Guardian at the Crossroads",
     title: createElement(
       "span",
       null,
@@ -38,13 +38,13 @@ export const heroSlides: HeroSlide[] = [
   },
   {
     img: heroImages.priestess,
-    eyebrow: "Voice of Eshu",
+    eyebrow: "Eshu: The Guardian at the Crossroads",
     title: createElement(
       "span",
       null,
       "Understand the shadows. Make the decision. ",
       createElement(GoldText, null, "Set things in motion."),
     ),
-    text: "Eshu is the spirit guide of movement, decision, and change, the guardian of the crossroads and of the choices that open a path.",
+    text: "Eshu is the Guardian of movement, decision, and change, the guardian of the crossroads and of the choices that open a path.",
   },
 ];

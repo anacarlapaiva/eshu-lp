@@ -1,5 +1,5 @@
 export const outcomes = [
-  "Know the difference between how Eshu is understood in Sacred Umbanda and how he appears in Candomblé, Santería, and Vodou, so you can speak accurately about each tradition.",
+  "Whether you come from Santería, Hoodoo or are meeting Eshu for the first time, learn how he is understood in Sacred Umbanda and how he acts in your life.",
   "Recognize the crossroads not as a metaphor, but as a real spiritual logic for the moments in your life when you need to choose, move, or begin again.",
   "Build your first firmeza: a traditional Umbanda ritual of connection with Eshu, with clear, step-by-step guidance on the materials, the prayer, and the meaning behind each element.",
   "Learn two traditional ritual baths from Sacred Umbanda, explained in context, so the practice makes sense before you try it.",

@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
+import { SectionEyebrow } from "@/components";
 import { media } from "@/styles/media";
 
 const progressFill = keyframes`
@@ -153,6 +154,18 @@ export const Copy = styled.div`
 export const Rise = styled.div<{ $delay?: number }>`
   animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
   animation-delay: ${({ $delay = 0 }) => `${$delay}ms`};
+`;
+
+export const HeroEyebrow = styled(SectionEyebrow)`
+  ${media.down("tablet")} {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.7rem;
+    font-size: clamp(0.72rem, 3.55vw, 0.875rem);
+    letter-spacing: 0.14em;
+    line-height: 1.4;
+    text-wrap: balance;
+  }
 `;
 
 export const Title = styled.h1`
